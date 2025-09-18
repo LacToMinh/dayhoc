@@ -108,7 +108,7 @@ const Home = () => {
               Các khóa học combo
             </p>
           </div>
-          <CourseSliderCombo />
+          <CourseSliderCombo items={4} />
         </div>
         <p className="container mt-2 text-center text-[14px] text-slate-500 md:hidden">
           Nhấp vào mũi tên hoặc lướt qua để xem thêm.
