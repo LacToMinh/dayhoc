@@ -86,23 +86,23 @@ const CourseItemTHPT = ({ course, onOpen, loading }) => {
           </div>
 
           <div className="info px-2.5 mt-[-10px] md:mt-[-20px] lg:mt-[-25px] 2xl:mt-[10px] sm:mt-[2px] sm:px-[10px] z-10 relative">
-            <h6 className="title capitalize font-semibold text-[15px] sm:text-[22px] text-black text-center">
+            <h6 className="title capitalize font-bold text-[14px] sm:text-[22px] text-black text-center">
               {course?.title}
             </h6>
             <div className="flex items-center gap-2 sm:gap-3 justify-center">
-              <span className="price font-bold text-[12px] sm:text-[17px] text-green-700">
+              <span className="price font-bold text-[11px] sm:text-[17px] text-green-700">
                 {course.price
                   ? `${course.price.toLocaleString()}₫`
                   : "399,000₫"}
               </span>
-              <span className="old-price line-through text-gray-400 text-[11px] sm:text-base">
+              <span className="old-price line-through text-gray-400 text-[10px] sm:text-base">
                 {course.oldPrice
                   ? `${course.oldPrice.toLocaleString()}₫`
                   : "499,000₫"}
               </span>
             </div>
             <div className="flex w-full items-center">
-              <div className="w-[24%] sm:w-[20%] flex justify-end mt-1.5 sm:mt-2">
+              <div className="w-[24%] sm:w-[20%] flex justify-end mt-3.5 sm:mt-2">
                 <Link to={ZALO_LINK} target="_blank" rel="noopener noreferrer">
                   <img
                     src={logo}
@@ -113,7 +113,7 @@ const CourseItemTHPT = ({ course, onOpen, loading }) => {
               </div>
               <div className="w-[76%] sm:w-[80%]">
                 <span
-                  className="promo-pill flex items-center ml-3 sm:ml-[54px] justify-center mt-1.5 sm:mt-2 px-2.5 sm:px-[12px] py-[3px] sm:py-[4px]
+                  className="promo-pill flex items-center ml-3 sm:ml-[54px] justify-center mt-3.5 sm:mt-2 px-2.5 sm:px-[12px] py-[3px] sm:py-[4px]
                            rounded-full text-[11px] sm:text-[14px] w-fit text-white font-semibold shadow-md"
                   style={{
                     backgroundImage:

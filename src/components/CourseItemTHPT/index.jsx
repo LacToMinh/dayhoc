@@ -85,16 +85,16 @@ const CourseItemTHPT = ({ course, onOpen, loading }) => {
           </div>
 
           <div className="info px-2.5 mt-[-10px] md:mt-[-20px] lg:mt-[-25px] 2xl:mt-[10px] sm:mt-[2px] sm:px-[10px] z-0 relative">
-            <h6 className="title capitalize font-bold text-[16px] sm:text-[22px] text-black text-center">
+            <h6 className="title capitalize font-bold text-[14px] sm:text-[22px] text-black text-center">
               {course.title}
             </h6>
             <div className="flex items-center gap-2 sm:gap-3 justify-center">
-              <span className="price font-bold text-[14px] sm:text-[17px] text-green-700">
+              <span className="price font-bold text-[11px] sm:text-[17px] text-green-700">
                 {course.price
                   ? `${course.price.toLocaleString()}₫`
                   : "399,000₫"}
               </span>
-              <span className="old-price line-through text-gray-400 text-xs sm:text-base">
+              <span className="old-price line-through text-gray-400 text-[10px] sm:text-base">
                 {course.oldPrice
                   ? `${course.oldPrice.toLocaleString()}₫`
                   : "499,000₫"}
