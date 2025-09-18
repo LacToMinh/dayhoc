@@ -9,7 +9,7 @@ export default function ModalPortal({
   schedule = [],
   loadingSchedule = false, // <-- nhận prop loading
   onClose,
-  ctaLink = DEFAULT_ZALO_LINK
+  ctaLink = DEFAULT_ZALO_LINK,
 }) {
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
@@ -62,7 +62,9 @@ export default function ModalPortal({
             <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/70">
               <div className="flex flex-col items-center gap-3">
                 <div className="w-12 h-12 rounded-full border-4 border-slate-300 border-t-transparent animate-spin" />
-                <div className="text-slate-700 font-medium">Đang tải lịch...</div>
+                <div className="text-slate-700 font-medium">
+                  Đang tải lịch...
+                </div>
               </div>
             </div>
           )}
@@ -76,7 +78,10 @@ export default function ModalPortal({
 
           {/* Nếu có schedule, hiển thị grid (kể cả khi loadingSchedule === true thì overlay sẽ hiện ở trên) */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {(schedule && schedule.length > 0 ? schedule : new Array(4).fill(null)).map((r, i) => (
+            {(schedule && schedule.length > 0
+              ? schedule
+              : new Array(4).fill(null)
+            ).map((r, i) => (
               <Reveal key={i} delayMs={80 * i}>
                 <div className="rounded-2xl border border-slate-200 p-5 bg-slate-50 min-h-[110px]">
                   {r ? (
@@ -119,7 +124,9 @@ export default function ModalPortal({
             href={loadingSchedule ? undefined : ctaLink}
             target={loadingSchedule ? undefined : "_blank"}
             rel={loadingSchedule ? undefined : "noopener noreferrer"}
-            className={ctaClass + (loadingSchedule ? ctaDisabledStyle : ctaEnabledStyle)}
+            className={
+              ctaClass + (loadingSchedule ? ctaDisabledStyle : ctaEnabledStyle)
+            }
             aria-disabled={loadingSchedule}
             onClick={(e) => {
               if (loadingSchedule) e.preventDefault();
