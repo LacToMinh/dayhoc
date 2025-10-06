@@ -18,6 +18,12 @@
       { "grade": "Lớp 7", "days": "Thứ 2, Thứ 4", "shift": "CA 2", "time": "19:30 - 21:00", "note": "Văn 7 - Cô Nhi" },
       { "grade": "Lớp 8", "days": "Thứ 2, Thứ 4", "shift": "CA 2", "time": "19:30 - 21:00", "note": "Văn 8 - Cô Nhi" },
       { "grade": "Lớp 9", "days": "Thứ 2, Thứ 4", "shift": "CA 1", "time": "18:00 - 19:30", "note": "Văn 9 - Cô Nhi" }
+    ],
+    "hoa": [
+      { "grade": "Lớp 6", "days": "-", "shift": "-", "time": "-", "note": "Chưa mở lớp Hóa 6" },
+      { "grade": "Lớp 7", "days": "-", "shift": "-", "time": "-", "note": "Chưa mở lớp Hóa 7" },
+      { "grade": "Lớp 8", "days": "-", "shift": "-", "time": "-", "note": "Chưa mở lớp Hóa 8" },
+      { "grade": "Lớp 9", "days": "-", "shift": "-", "time": "-", "note": "Chưa mở lớp Hóa 9" }
     ]
   }
 }
